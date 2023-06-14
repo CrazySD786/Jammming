@@ -1,11 +1,11 @@
-import React from "react";
+import React, { useState} from "react";
 import Tracklist from '../Tracklist/Tracklist';
 
-function SearchResult() {
+function SearchResult({tracklist, onAdd}) {
     return (
         <>
             <h1>Search Results</h1>
-            <Tracklist />
+            <Tracklist tracklist={tracklist} onAdd={onAdd}/>
         </>
     )
 }
