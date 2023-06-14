@@ -1,4 +1,4 @@
-import React, { useState} from 'react';
+import React from 'react';
 import './Track.css'
 
 function Track({image, name, artist, album, addButton, onAdd, onRemove, index, id}) {

@@ -37,8 +37,12 @@ function App() {
   }
 
   function onRemove(key) {
-    setPlaylist(playlist.filter(track => track.id != key));
+    setPlaylist(playlist.filter(track => track.id !== key));
   }
+
+  
+
+
 
   return (
     <>
