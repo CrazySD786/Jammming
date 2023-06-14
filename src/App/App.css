@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.songs {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.searchbar {
+    display: flex;
+    justify-content: center; 
+    margin: 15px;   
+}
+
+header {
+    display:block;
+    padding:20px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: hsl(0, 0%, 12%);
+    letter-spacing: 8px;
+    font-size: 20px;
+    margin-bottom: 15px;
+ 
+}
+
+header h1 {
+    display: inline-block;
+    background-image: linear-gradient(to right, hsl(141, 73%, 42%),hsl(181, 73%, 42%),hsl(301, 73%, 42%));
+    background-clip: text;
+    background-color: transparent;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}

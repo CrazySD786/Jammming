@@ -1,13 +1,16 @@
 import React, { useState} from "react";
+import './Searchbar.css'
 
 
 function Searchbar({onSubmit}) {
     return (
         <>
-            <form method="post" onSubmit={onSubmit}>
-                <input name="songName" type="text" placeholder="Enter song name" />
-                <input type="submit"/>
-            </form>
+            <div className="searchbar">
+                <form method="post" onSubmit={onSubmit}>
+                    <input className='white' name="songName" type="text" placeholder=" Enter song name" />
+                    <input type="submit" className="green"/>
+                </form>
+            </div>
         </>
     )
 }

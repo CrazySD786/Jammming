@@ -42,10 +42,16 @@ function App() {
 
   return (
     <>
-      <Playlist playlist={playlist} onRemove={onRemove} savePlaylist={savePlaylist}/>
-      <Searchbar onSubmit={handleSearch}/>
-      <SearchResult tracklist={tracklist} onAdd={onAdd}/>
-
+      <header>
+        <h1>Jammming</h1>
+      </header>
+      <div className='searchbar'>
+        <Searchbar  onSubmit={handleSearch}/>
+      </div>
+      <div className='songs'>
+        <SearchResult tracklist={tracklist} onAdd={onAdd}/>
+        <Playlist playlist={playlist} onRemove={onRemove} savePlaylist={savePlaylist}/>
+      </div>
     </>
   );
 }
