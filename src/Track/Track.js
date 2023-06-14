@@ -12,7 +12,7 @@ function Track({image, name, artist, album, addButton, onAdd, onRemove, index, i
             <div className='track'>
                 <div className='start'>
                     <div className='image'>
-                        <img src={image} />
+                        <img src={image} alt='Image of the album'/>
                     </div>
                     <div className='text'>
                         <h2>{name}</h2>
